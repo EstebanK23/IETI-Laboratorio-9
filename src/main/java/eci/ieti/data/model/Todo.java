@@ -15,7 +15,7 @@ public class Todo {
 
     private int priority;
 
-    private Date duaDate;
+    private Date dueDate;
 
     private String responsible;
 
@@ -23,10 +23,10 @@ public class Todo {
 
     public Todo(){}
 
-    public Todo(String description, int priority, Date duaDate, String responsible, String status){
+    public Todo(String description, int priority, Date dueDate, String responsible, String status){
         this.description = description;
         this.priority = priority;
-        this.duaDate = duaDate;
+        this.dueDate = dueDate;
         this.responsible = responsible;
         this.status = status;
     }
@@ -34,8 +34,8 @@ public class Todo {
     @Override
     public String toString() {
         return String.format(
-                "Todo[id=%s, description='%s', priority='%s', duaDate='%s', responsible='%s', status='%s']",
-                id, description, priority,duaDate,responsible,status);
+                "Todo[id=%s, description='%s', priority='%s', dueDate='%s', responsible='%s', status='%s']",
+                id, description, priority,dueDate,responsible,status);
     }
 
     public Long getId() {
@@ -63,11 +63,11 @@ public class Todo {
     }
 
     public Date getDuaDate() {
-        return duaDate;
+        return dueDate;
     }
 
-    public void setDuaDate(Date duaDate) {
-        this.duaDate = duaDate;
+    public void setDuaDate(Date dueDate) {
+        this.dueDate = dueDate;
     }
 
     public String getResponsible() {
